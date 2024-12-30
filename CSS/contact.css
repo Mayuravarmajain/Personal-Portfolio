@@ -1,0 +1,109 @@
+.contact-wrapper {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-container {
+    flex: 1.5;
+    padding: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background: rgba(153, 5, 185, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-5px);
+}
+
+.info-item svg {
+    min-width: 24px;
+    color: #9905b9;
+}
+
+.info-content h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.info-content p {
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Existing form styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: transparent;
+    color: inherit;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: linear-gradient(45deg, #9905b9, #541f62);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    transform: scale(1.02);
+}
+
+/* Dark theme adjustments */
+.theme-checkbox:checked ~ .contact-wrapper .info-item {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.theme-checkbox:checked ~ .contact-wrapper .info-content p {
+    color: #ccc;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+    
+    .contact-info,
+    .contact-container {
+        width: 100%;
+    }
+}
