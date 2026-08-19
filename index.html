@@ -1,546 +1,532 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark scroll-smooth">
 <head>
-    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Mayura Varma Jain| Portfolio - Web Developer">
-    <meta name="description"
-        content="Showcasing the web development journey of Mayura Varma Jain. Explore responsive designs, and projects built using HTML, CSS, JavaScript,">
-    <meta name="keywords"
-        content="Mayura Varma Jain, portfolio, web developer,  HTML, CSS, JavaScript, React.js, Node.js, MongoDB, responsive design, TypedJS, AOS, SEO optimized portfolio">
-    <meta name="author" content="Mayura Varma Jain">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Mayura Varma Jain| Portfolio - Web Developer ">
-    <meta property="og:description"
-        content="Showcasing my journey as a web developer. Explore projects built with modern web technologies including HTML, CSS, JavaScript">
-    <meta property="og:image" content="https://yourwebsite.com/og-image.jpg">
-    <meta property="og:url" content="https://mayuravarmajain-portfolio.vercel.app">
-    <meta property="og:type" content="website">
-    <meta name="robots" content="index, follow">
-    <meta charset="UTF-8">
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "Person",
-            "name": "Mayura Varma Jain",
-            "jobTitle": "Web Developer",
-            "url": "https://mayuravarmajain-portfolio.vercel.app",
-            "description": "Web development portfolio of Mayura Varma Jain, showcasing projects built with modern technologies."
-        }
-</script>
-    <!-- Vercel script -->
-    <script defer src="/_vercel/insights/script.js"></script>
+    <title>Mayura Varma Jain | Junior Python Developer & Generative AI Engineer</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script>
-        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/speed-insights/script.js"></script>
-    <!-- AOS CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <link rel="icon" href="/assets/dev.png" type="image/png">
-    <title>Mayura Varma Jain - Developer portfolio</title>
-    <!--CSS  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="stylesheet" href="CSS/mainsec.css">
-    <link rel="stylesheet" href="CSS/footer.css">
-    <link rel="stylesheet" href="CSS/nav.css">
-    <link rel="stylesheet" href="CSS/responsiveness.css">
-    <link rel="stylesheet" href="CSS?/contact.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <style>
-        .contact-wrapper {
-    display: flex;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.contact-info {
-    flex: 1;
-    padding: 20px;
-}
-
-.contact-container {
-    flex: 1.5;
-    padding: 20px;
-}
-
-.info-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    border-radius: 10px;
-    background: rgba(153, 5, 185, 0.05);
-    transition: transform 0.3s ease;
-}
-
-.info-item:hover {
-    transform: translateY(-5px);
-}
-
-.info-item svg {
-    min-width: 24px;
-    color: #9905b9;
-}
-
-.info-content h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.1rem;
-    font-weight: 600;
-}
-
-.info-content p {
-    margin: 0;
-    color: #666;
-    line-height: 1.6;
-}
-
-/* Existing form styles */
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    font-family: 'IBM Plex Sans', sans-serif;
-    background: transparent;
-    color: inherit;
-}
-
-.form-group textarea {
-    height: 150px;
-    resize: vertical;
-}
-
-.submit-btn {
-    background: linear-gradient(45deg, #9905b9, #541f62);
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    transition: transform 0.3s ease;
-    width: 100%;
-}
-
-.submit-btn:hover {
-    transform: scale(1.02);
-}
-
-/* Dark theme adjustments */
-.theme-checkbox:checked ~ .contact-wrapper .info-item {
-    background: rgba(255, 255, 255, 0.05);
-}
-
-.theme-checkbox:checked ~ .contact-wrapper .info-content p {
-    color: #ccc;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .contact-wrapper {
-        flex-direction: column;
-    }
-    
-    .contact-info,
-    .contact-container {
-        width: 100%;
-    }
-}
-
-.clickable {
-    cursor: pointer;
-}
-
-.email-link {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.email-link:hover {
-    color: #9905b9;
-}
-
-.info-item.clickable:hover {
-    background: rgba(153, 5, 185, 0.1);
-}
-
-/* Dark theme adjustment for email link */
-.theme-checkbox:checked ~ .contact-wrapper .email-link:hover {
-    color: #bf40e6;
-}
-    </style>
-    <!-- Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap"
-        rel="stylesheet">
-    <!-- javascript -->
-    <link rel="script" href="Js/index.js">
-</head>
-
-<body>
-    <header>
-        <nav>
-            <div class="left">Mayura's Portfolio</div>
-            <div class="contain-link">
-                <div class="links">
-                    <span class="logo-item">
-                        <a href="https://github.com/Mayuravarmajain" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"
-                                alt="GitHub Logo" width="25">
-                        </a>
-                    </span>|
-                    <span class="logo-item">
-                        <a href="https://www.linkedin.com/in/mayura-varma-jain-2552822b5/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg"
-                                alt="LinkedIn Logo" width="25">
-                        </a>
-                    </span>
-                </div>|
-                <div class="theme-switch">
-                    <input type="checkbox" id="theme-checkbox" />
-                    <label for="theme-checkbox">
-                        <div></div>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-6 h-6">
-                                <path fill-rule="evenodd"
-                                    d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </span>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-6 h-6">
-                                <path
-                                    d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z">
-                                </path>
-                            </svg>
-                        </span>
-                    </label>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="firstsection" data-aos="fade-up">
-            <div class="leftsection" data-aos="fade-up">
-                Hi, I am <span class="purple dark">Mayura Varma Jain</span>
-                <div>and I am a passionate</div>
-                <span id="element"></span>
-            </div>
-            <div class="rightsection" data-aos="fade-up">
-                <img src="assets/dev.png" alt="dev" srcset="">
-            </div>
-        </section>
-        <hr>
-        <section class="secondsection about-sec" data-aos="fade-up">
-            <p>About Me</p>
-            <div class="about">As a <span class="bold">passionate MCA student</span> with a strong foundation in <span
-                    class="bold"></span><span class="bold">
-                    web development</span>, I have consistently demonstrated my ability to innovate and solve real-world
-                problems through technology. From building functional solutions  to
-                spearheading impactful academic projects such as a <span class="bold">Automated Job Hiring System</span>
-                and participating in
-                <span class="bold">Smart India Hackathon</span> initiatives, I have proposed a mobile application to find
-                the undiscavered Heritage Place's
-                <span class="bold">web application</span>,
-                is backed by practical experience in <span class="bold">event management</span> and team leadership.I
-                thrive in
-                dynamic environments and am committed to leveraging my skills to deliver meaningful results for
-                organizations.
-            </div>
-        </section>
-        <hr>
-        <section class=" secondsection education" data-aos="zoom-in">
-            <p>Education</p>
-            <div class="edu-al">
-                <img alt="roadmap" class="roadmap" src="assets/roadmap.png" data-aos="fade-up">
-            </div>
-        </section>
-        <hr>
-        <section class=" secondsection lang" data-aos="zoom-in" style="flex-direction: column;">
-            <p>Languages and technologies known</p>
-            <div class="logos" data-aos="fade-up">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
-                    alt="HTML Logo" width="100">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
-                    alt="CSS Logo" width="100">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                    alt="JavaScript Logo" width="100">
-                  <!--<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
-                    alt="MongoDB Logo" width="100">
-                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
-                    alt="React Logo" width="100">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
-                    alt="Node.js Logo" width="100">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
-                    alt="Express Logo" width="100">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" 
-                    alt="Tailwind CSS Icon" width="100">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" 
-                    alt="Bootstrap Icon" width="100">-->
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/JQuery-Logo.svg" 
-                    alt="jQuery Icon" width="200">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sqlite/sqlite-original.svg"
-                    alt="SQL Logo" width="100">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C Logo"
-                    width="100">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
-                    alt="Java Logo" width="100">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
-                    alt="Git Logo" width="100">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"
-                    alt="GitHub Logo" width="100">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"
-                    alt="VS Code Logo" width="100">
-            </div>
-        </section>
-        <hr>
-        <section class="secondsection" data-aos="fade-up">
-            <p data-aos="fade-up">Work Experience</p>
-            <div class="work">
-                <div class="clone clone2">
-                    <div class="hms net" data-aos="fade-up">
-                       
-                            <video class="netflix" src="assets/Portfolio.mp4" alt="netflix" autoplay muted loop></video>
-                        </a>
-                    </div>
-                  
-                        <p class="text bold" data-aos="fade-up">Portfolio</p>
-                    </a>
-                </div>
-                <div class="clone">
-                    <div class="hms" data-aos="fade-up">
-
-                            <video class="hostel netflix" src="assets/ajhs.mp4" alt="hms" autoplay muted loop></video>
-                            <div class="overlay-content" data-aos="fade-up">
-                            </div>
-                        </a>
-                    </div>
-                        <p class="text bold" data-aos="fade-up">Automated Job Hiring System</p>
-                    </a>
-                </div>
-                <div class="clone">
-                    <div class="hms" data-aos="fade-up">
-
-                            <video class="hostel netflix" src="assets/IOT.mp4" alt="hms" autoplay muted loop></video>
-                            <div class="overlay-content" data-aos="fade-up">
-                            </div>
-                        </a>
-                    </div>
-                        <p class="text bold" data-aos="fade-up">IOT Based pallution Monitoring System</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <hr>
-
-        <section class="secondsection contact" data-aos="fade-up">
-            <p>Contact Me</p>
-            <div class="contact-wrapper" data-aos="fade-up">
-                <!-- Left side - Contact Information -->
-                <div class="contact-info">
-                    <div class="info-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                        </svg>
-                        <div class="info-content">
-                            <h3>Call Me</h3>
-                            <p>+91 8792010099</p>
-                        </div>
-                    </div>
-                    <div class="info-item clickable" onclick="window.location.href='mailto:mayuravarmajainv@gmail.com'">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                        <div class="info-content">
-                            <h3>Email</h3>
-                            <a href="mailto:mayuravarmajainv@gmail.com" class="email-link">mayuravarmajainv@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                        <div class="info-content">
-                            <h3>Location</h3>
-                            <p>Bangalore, Karnataka<br>India</p>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <section id="contact" class="section-container">
-                  
-                    <div class="contact-container">
-                        <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                            <input type="hidden" name="access_key" value="2a3ad04d-5800-4a87-afb2-036db16ae388">
-                            <!-- Custom Email Subject -->
-                            <input type="hidden" name="subject" value="📩 New Contact Form Submission">
-                
-                            <!-- Reply-To Email -->
-                            <input type="hidden" name="replyto" value="email">
-                
-                            <!-- Hidden Field for Structured Message -->
-                            <input type="hidden" id="formatted-message" name="message">
-                
-                            <div class="form-group">
-                                <label for="name"><b>Name :</b></label>
-                                <input type="text" id="name" name="name" required>
-                                
-                                <span class="error-message" id="name-error"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="email"><b>Email :</b></label>
-                                <input type="email" id="email" name="email" required>
-                               
-                                <span class="error-message" id="email-error"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="message"><b>Message :</b></label>
-                                <textarea id="message" name="message" required ></textarea>
-                                
-                                <span class="error-message" id="message-error"></span>
-                            </div>
-                            <button type="submit" class="submit-btn" >Send Message</button>
-                            <p id="form-response"></p>
-                        </form>
-                    </div>
-                </section>
-              
-                <script src="touch.js"></script>
-
-
-
-             
-        </section>
-
-    </main>
-    <button id="backToTopBtn" title="Go to top" class="top" data-aos="fade-up" placeholder="Back to top">
-        <img src="assets/up-arrow.png" alt="Up Arrow">
-    </button>
-    <footer>
-        <section class=" secondsection foot" data-aos="fade-up">
-            <p>My Profiles</p>
-            <div class="logos" data-aos="fade-up">
-                <div class="logo-item" data-aos="fade-up">
-                    <a href="assets\Resume.pdf" target="_blank" view="mayura_varma_jain.pdf">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" 
-                            alt="PDF Icon" width="100" height="100">
-                    </a>
-                    <p>Resume</p>
-                </div>
-                <div class="logo-item" data-aos="fade-up">
-                    <a href="https://github.com/Mayuravarmajain" target="_blank">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"
-                            alt="GitHub Logo" width="100">
-                    </a>
-                    <p>GitHub</p>
-                </div>
-                <div class="logo-item" data-aos="fade-up">
-                    <a href="https://www.linkedin.com/in/mayura-varma-jain-2552822b5/" target="_blank">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg"
-                            alt="LinkedIn Logo" width="100">
-                    </a>
-                    <p>LinkedIn</p>
-                </div>
-            </div>
-            </div>
-        </section>
-        <section></section>
-    </footer>
-    <!-- Scroll to top Button -->
-    <script>
-        let backToTopBtn = document.getElementById("backToTopBtn");
-        window.onscroll = function () {
-            scrollFunction();
-        };
-        function scrollFunction() {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                backToTopBtn.style.display = "block";
-            } else {
-                backToTopBtn.style.display = "none";
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            purple: '#9905b9',
+                            dark: '#080811',
+                            card: '#121225',
+                            accent: '#bf40e6',
+                            cyan: '#00f2fe'
+                        }
+                    }
+                }
             }
         }
-        backToTopBtn.onclick = function () {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        };
     </script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer.', 'Web Designer.', 'Tech Enthusiast.',],
-            typeSpeed: 50,
-            loop: true,
-        });
-    </script>
-    <!-- Theme switch button -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const themeCheckbox = document.getElementById('theme-checkbox');
-            themeCheckbox.addEventListener('change', function () {
-                const targetElement = document.querySelector('.purple.dark');
-                const boldElements = document.querySelectorAll('.bold');
-                if (this.checked) {
-                    document.body.style.background = 'linear-gradient(120deg, rgba(0,0,0,1) 25%, rgba(153,5,185,1) 50%, rgba(84,15,98,1) 75%)';
-                    document.body.style.color = 'white';
-                    targetElement.style.color = 'white';
-                    boldElements.forEach(function (element) {
-                        element.style.color = 'white';
-                    });
-                } else {
-                    document.body.style.background = '';
-                    document.body.style.color = '';
-                    targetElement.style.color = '';
-                    boldElements.forEach(function (element) {
-                        element.style.color = '';
-                    });
-                }
-            });
-        });
-    </script>
-    <!-- AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            once: false,
-        });
-    </script>
-     
-</body>
 
+    <!-- React, ReactDOM, Babel, and Framer Motion -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+
+    <style>
+        /* Typography */
+        body {
+            background-color: #080811;
+            color: #ffffff;
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Animated subtle radial background */
+        .glow-bg {
+            position: relative;
+            background: radial-gradient(circle at 30% 20%, rgba(153, 5, 185, 0.12) 0%, rgba(8,8,17,0) 35%),
+                        radial-gradient(circle at 80% 80%, rgba(0,242,254,0.06) 0%, rgba(8,8,17,0) 35%),
+                        linear-gradient(180deg, rgba(8,8,11,1) 0%, rgba(8,8,11,1) 100%);
+            overflow: hidden;
+        }
+
+        /* Slow animated gradient movement */
+        .animated-bg:before {
+            content: '';
+            position: absolute;
+            inset: -30%;
+            background: radial-gradient(circle at 20% 30%, rgba(191,64,230,0.12), transparent 20%),
+                        radial-gradient(circle at 80% 70%, rgba(0,242,254,0.08), transparent 20%);
+            filter: blur(40px);
+            animation: floatBG 10s linear infinite alternate;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        @keyframes floatBG {
+            from { transform: translate3d(0,0,0) rotate(0deg); }
+            to { transform: translate3d(-8%,6%,0) rotate(8deg); }
+        }
+
+        /* Enhanced glass cards */
+        .glass-card {
+            background: rgba(18, 18, 37, 0.5);
+            backdrop-filter: blur(14px) saturate(1.1);
+            border: 1px solid rgba(153, 5, 185, 0.14);
+            box-shadow: 0 6px 30px rgba(0,0,0,0.45);
+            position: relative;
+            z-index: 1;
+        }
+
+        .glass-card:hover {
+            border-color: rgba(191, 64, 230, 0.45);
+            transform: translateY(-4px);
+            transition: transform 250ms ease, border-color 250ms ease;
+        }
+
+        /* Profile rings */
+        .profile-wrap { position: relative; width: 100%; height: 100%; display: block; }
+        .profile-ring { position: absolute; inset: 0; border-radius: 9999px; pointer-events: none; }
+        .ring-1 { box-shadow: 0 0 0 6px rgba(153,5,185,0.06) inset; }
+        .ring-2 { box-shadow: 0 0 40px rgba(191,64,230,0.12); transform: scale(1.03); }
+        .ring-3 { box-shadow: 0 0 60px rgba(0,242,254,0.06); filter: blur(8px); }
+
+        /* Hover effect for hero photo */
+        .profile-outer { transition: transform 420ms cubic-bezier(.2,.9,.2,1), box-shadow 420ms; }
+        .profile-outer:hover { transform: translateY(-6px) rotate(-1deg) scale(1.02); }
+
+        /* Presence badge */
+        .presence-pill { transform-origin: center; }
+        .presence-pill .dot { width: 8px; height: 8px; border-radius: 9999px; box-shadow: 0 0 10px rgba(34,197,94,0.4); }
+
+        /* Micro interactions */
+        .hover-pop { transition: transform 220ms ease, box-shadow 220ms ease; }
+        .hover-pop:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.5); }
+
+        /* Utility tweaks */
+        .name-display { font-family: 'Poppins', sans-serif; }
+        .text-brand-accent { color: #bf40e6; }
+
+        /* Make sure layered background sits behind content */
+        .glow-bg > * { position: relative; z-index: 2; }
+    </style>
+</head>
+<body class="selection:bg-brand-purple selection:text-white">
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+        const { motion, AnimatePresence } = window.Motion;
+
+        function App() {
+            const [roleIndex, setRoleIndex] = useState(0);
+            const roles = [
+                "Junior Python Developer", 
+                "Generative AI Specialist", 
+                "LLM & RAG Engineer", 
+                "Computer Vision Developer"
+            ];
+
+            useEffect(() => {
+                const interval = setInterval(() => {
+                    setRoleIndex((prev) => (prev + 1) % roles.length);
+                }, 2500);
+                return () => clearInterval(interval);
+            }, []);
+
+            const skillCategories = [
+                {
+                    title: "Generative AI & LLMs",
+                    skills: ["LLaMA", "Prompt Engineering", "Sentence Transformers", "Semantic Search", "Embeddings", "RAG Concepts"]
+                },
+                {
+                    title: "AI / ML / Computer Vision",
+                    skills: ["YOLO (Ultralytics)", "Cosine Similarity", "Fuzzy Matching", "MediaPipe", "Machine Learning"]
+                },
+                {
+                    title: "Backend & Data Engineering",
+                    skills: ["Python", "Flask", "REST API", "SQL / PostgreSQL", "MySQL", "RabbitMQ", "Pandas & NumPy", "ETL Pipelines"]
+                },
+                {
+                    title: "Cloud, DevOps & Tools",
+                    skills: ["Docker", "Google Cloud Storage", "GCP Pub/Sub", "Linux", "Git", "Streamlit"]
+                }
+            ];
+
+            const experiences = [
+                {
+                    role: "Junior Python Developer",
+                    company: "Cogniquest.ai",
+                    period: "Oct 2025 – Present",
+                    points: [
+                        "Built an AI-powered invoice processing system using Python, Pandas, SQL, and RabbitMQ to automate large-scale document workflows.",
+                        "Implemented LLaMA-based LLM integration for intelligent key-value extraction from unstructured invoices.",
+                        "Developed an NLP Invoice Knowledge Base using Fuzzy Matching and Sentence Transformers for semantic product matching.",
+                        "Trained a YOLO (Ultralytics) model with Cosine Similarity embeddings to detect and verify human signatures automatically.",
+                        "Integrated GCP Pub/Sub with Google Cloud Storage for event-driven, asynchronous document processing pipelines."
+                    ]
+                },
+                {
+                    role: "Software Development Intern",
+                    company: "Cogniquest.ai",
+                    period: "Aug 2025 – Sep 2025",
+                    points: [
+                        "Built ETL pipelines to pull raw data from multiple sources, clean/transform it, and load it into structured databases.",
+                        "Optimized SQL queries for extraction, validation, and reporting tasks.",
+                        "Developed backend modules, performed debugging, and wrote automation scripts using Python and Flask."
+                    ]
+                }
+            ];
+
+            const projects = [
+                {
+                    title: "Signature Detection & Verification for Invoices",
+                    category: "AI & Computer Vision",
+                    period: "2025 – 2026 | Cogniquest.ai",
+                    desc: "Trained a YOLO (Ultralytics) model to detect human signatures on invoice documents, using Cosine Similarity models to compare embeddings against reference signatures for authenticity verification.",
+                    tag: "Featured"
+                },
+                {
+                    title: "Cricshot AI: Cricket Stance Analysis",
+                    category: "Generative AI & Computer Vision",
+                    period: "Live Project",
+                    desc: "Built an AI tool using CNNs, pose estimation (MediaPipe), and Siamese Networks to classify shots, analyze posture, and provide real-time feedback via a web dashboard.",
+                    tag: "Live"
+                },
+                {
+                    title: "Carbon Footprint Emission Analysis",
+                    category: "Data Engineering & Analytics",
+                    period: "2025",
+                    desc: "Analyzed CO₂, CO, and CH₄ emissions using Python to reveal regional/sectorial trends, creating an interactive dashboard for policy insights.",
+                    tag: "Python"
+                },
+                {
+                    title: "IPL Analysis Dashboard",
+                    category: "Data Visualization",
+                    period: "2025",
+                    desc: "Developed an interactive Power BI dashboard visualizing IPL stats, match results, team metrics, and player performance using DAX and slicers.",
+                    tag: "Power BI"
+                }
+            ];
+
+            return (
+                <div class="min-h-screen relative overflow-hidden glow-bg">
+                    
+                    {/* Navigation */}
+                    <nav class="fixed top-0 left-0 right-0 z-50 glass-card px-6 py-4">
+                        <div class="max-w-6xl mx-auto flex justify-between items-center">
+                            <motion.div 
+                                initial={{ opacity: 0, x: -20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                class="text-xl font-bold bg-gradient-to-r from-brand-accent to-brand-cyan bg-clip-text text-transparent"
+                            >
+                                Mayura Varma Jain<span class="text-brand-purple"></span>
+                            </motion.div>
+                            <div class="flex items-center space-x-6 text-sm font-medium">
+                                <a href="#about" class="hover:text-brand-accent transition">About</a>
+                                <a href="#experience" class="hover:text-brand-accent transition">Experience</a>
+                                <a href="#skills" class="hover:text-brand-accent transition">Skills</a>
+                                <a href="#projects" class="hover:text-brand-accent transition">Projects</a>
+                                <a href="#contact" class="px-4 py-2 rounded-full bg-brand-purple hover:bg-brand-accent transition font-semibold text-white">Contact</a>
+                            </div>
+                        </div>
+                    </nav>
+
+                    {/* Hero Section with Photo */}
+                    <section class="max-w-6xl mx-auto px-6 pt-36 pb-20 flex flex-col md:flex-row items-center justify-between min-h-[85vh]">
+                        <motion.div 
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8 }}
+                            class="md:w-7/12 space-y-6"
+                        >
+                            <div class="inline-block px-4 py-1.5 rounded-full glass-card text-brand-accent text-sm font-semibold tracking-wide">
+                                🚀 Junior Python Developer @ Cogniquest.ai
+                            </div>
+                            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                                Hi, I am <br/>
+                                <span class="bg-gradient-to-r from-brand-accent via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                                    Mayura Varma Jain
+                                </span>
+                            </h1>
+                            <div class="text-xl md:text-2xl font-medium text-gray-300 h-10 flex items-center">
+                                <span>Specialized in&nbsp;</span>
+                                <AnimatePresence mode="wait">
+                                    <motion.span
+                                        key={roleIndex}
+                                        initial={{ opacity: 0, y: 10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        exit={{ opacity: 0, y: -10 }}
+                                        class="text-brand-cyan font-bold"
+                                    >
+                                        {roles[roleIndex]}
+                                    </motion.span>
+                                </AnimatePresence>
+                            </div>
+                            <p class="text-gray-400 leading-relaxed max-w-xl">
+                                Hands-on experience building LLM-powered backend systems, RAG architecture, document automation pipelines, computer vision (YOLO), and cloud data processing (GCP, Docker, RabbitMQ).
+                            </p>
+                            <div class="flex flex-wrap gap-4 pt-4">
+                                <a href="#projects" class="px-6 py-3 rounded-xl bg-gradient-to-r from-brand-purple to-brand-accent font-semibold hover:shadow-lg hover:shadow-brand-purple/40 transition">
+                                    View Live Work
+                                </a>
+                                <a href="https://github.com/Mayuravarmajain" target="_blank" class="px-6 py-3 rounded-xl glass-card font-semibold hover:bg-white/10 transition">
+                                    GitHub
+                                </a>
+                                <a href="https://linkedin.com/in/mayura-varma-jain-2552822b5" target="_blank" class="px-6 py-3 rounded-xl glass-card font-semibold hover:bg-white/10 transition">
+                                    LinkedIn
+                                </a>
+                            </div>
+                        </motion.div>
+
+                        {/* Profile Photo Display */}
+                        <motion.div 
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.8, delay: 0.2 }}
+                            class="md:w-5/12 mt-12 md:mt-0 flex justify-center relative"
+                        >
+                            <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-1.5 bg-gradient-to-tr from-brand-purple via-brand-accent to-brand-cyan shadow-2xl shadow-brand-purple/40 profile-outer">
+                                <div class="profile-wrap">
+                                    <div class="profile-ring ring-3"></div>
+                                    <div class="profile-ring ring-2"></div>
+                                    <div class="profile-ring ring-1"></div>
+
+                                    <img 
+                                        src="assets/profile_photo.png" 
+                                        alt="Mayura Varma Jain" 
+                                        class="w-full h-full object-cover rounded-full border-4 border-brand-dark" 
+                                        loading="lazy" decoding="async" aria-hidden="false"
+                                    />
+                                </div>
+
+                                <div class="absolute -bottom-2 -right-2 glass-card px-4 py-2 rounded-xl text-xs font-bold text-brand-cyan flex items-center gap-2 border border-brand-accent/40 shadow-lg presence-pill">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-green-400 dot"></span>
+                                    AI & LLM Dev
+                                </div>
+                            </div>
+                        </motion.div>
+                    </section>
+
+                    {/* About & Education */}
+                    <section id="about" class="max-w-6xl mx-auto px-6 py-16">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <motion.div 
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                class="glass-card rounded-3xl p-8 md:col-span-2"
+                            >
+                                <h2 class="text-3xl font-bold mb-4 text-brand-accent">About Me</h2>
+                                <p class="text-gray-300 leading-relaxed">
+                                    I am a Junior Python Developer specializing in building end-to-end Generative AI applications, RAG workflows, and computer vision models. With hands-on industrial experience at Cogniquest.ai, I've developed LLaMA-driven key-value extraction systems, signature authenticity verification models, and event-driven GCP Pub/Sub data processing services.
+                                </p>
+                            </motion.div>
+
+                            <motion.div 
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                class="glass-card rounded-3xl p-8"
+                            >
+                                <h2 class="text-2xl font-bold mb-4 text-brand-cyan">Education</h2>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h3 class="font-semibold text-white">MCA (Master of Computer Application)</h3>
+                                        <p class="text-xs text-gray-400">Acharya Institute of Technology, Bengaluru</p>
+                                        <p class="text-xs text-brand-accent font-bold mt-1">2023 – Present | CGPA: 8.9</p>
+                                    </div>
+                                    <hr class="border-gray-800" />
+                                    <div>
+                                        <h3 class="font-semibold text-white">BCA (Bachelor of Computer Application)</h3>
+                                        <p class="text-xs text-gray-400">SDM College, Ujire-Mangaluru</p>
+                                        <p class="text-xs text-brand-accent font-bold mt-1">2020 – 2023 | CGPA: 7.34</p>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        </div>
+                    </section>
+
+                    {/* Work Experience */}
+                    <section id="experience" class="max-w-6xl mx-auto px-6 py-16">
+                        <h2 class="text-3xl font-bold mb-10 text-center text-brand-accent">Work Experience</h2>
+                        <div class="space-y-8">
+                            {experiences.map((exp, idx) => (
+                                <motion.div 
+                                    key={idx}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    class="glass-card rounded-3xl p-8"
+                                >
+                                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                                        <div>
+                                            <h3 class="text-2xl font-bold text-white">{exp.role}</h3>
+                                            <p class="text-brand-cyan font-medium">{exp.company}</p>
+                                        </div>
+                                        <span class="text-xs bg-brand-purple/30 text-brand-accent px-3 py-1 rounded-full border border-brand-purple/40 mt-2 md:mt-0 self-start md:self-auto">
+                                            {exp.period}
+                                        </span>
+                                    </div>
+                                    <ul class="list-disc list-inside space-y-2 text-gray-300 text-sm leading-relaxed">
+                                        {exp.points.map((pt, i) => (
+                                            <li key={i}>{pt}</li>
+                                        ))}
+                                    </ul>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </section>
+
+                    {/* Skill Categories */}
+                    <section id="skills" class="max-w-6xl mx-auto px-6 py-16">
+                        <h2 class="text-3xl font-bold mb-10 text-center text-brand-accent">Skills & Expertise</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            {skillCategories.map((cat, idx) => (
+                                <motion.div 
+                                    key={idx}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    class="glass-card p-6 rounded-2xl"
+                                >
+                                    <h3 class="text-xl font-bold text-brand-cyan mb-4">{cat.title}</h3>
+                                    <div class="flex flex-wrap gap-2">
+                                        {cat.skills.map((s, i) => (
+                                            <span key={i} class="px-3 py-1.5 rounded-lg bg-brand-purple/20 text-gray-200 text-xs font-semibold border border-brand-purple/30">
+                                                {s}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </section>
+
+                    {/* Publications & Certifications */}
+                    <section class="max-w-6xl mx-auto px-6 py-16">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            {/* Publication */}
+                            <motion.div 
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                class="glass-card rounded-3xl p-8"
+                            >
+                                <h3 class="text-2xl font-bold mb-4 text-brand-accent">📄 Publication</h3>
+                                <p class="text-white font-semibold mb-2">
+                                    Facial Feature Analysis for Habit Detection: Lip and Eye Color in Smoking and Drinking Prediction
+                                </p>
+                                <p class="text-xs text-brand-cyan font-semibold">Published: May–June 2025</p>
+                            </motion.div>
+
+                            {/* Certifications */}
+                            <motion.div 
+                                initial={{ opacity: 0, x: 20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                class="glass-card rounded-3xl p-8"
+                            >
+                                <h3 class="text-2xl font-bold mb-4 text-brand-accent">📜 Certifications</h3>
+                                <ul class="space-y-3 text-sm text-gray-300">
+                                    <li class="flex justify-between">
+                                        <span>Master Python for Data Science</span>
+                                        <span class="text-xs text-gray-500">March 2025</span>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <span>SQL Certification: Basic to Advanced</span>
+                                        <span class="text-xs text-gray-500">May 2025</span>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <span>Blockchain and its Application</span>
+                                        <span class="text-xs text-gray-500">July 2025</span>
+                                    </li>
+                                </ul>
+                            </motion.div>
+                        </div>
+                    </section>
+
+                    {/* Projects Section */}
+                    <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
+                        <h2 class="text-3xl font-bold mb-10 text-center text-brand-accent">Featured Projects</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            {projects.map((proj, index) => (
+                                <motion.div 
+                                    key={index}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: index * 0.1 }}
+                                    viewport={{ once: true }}
+                                    class="glass-card rounded-2xl p-6 flex flex-col justify-between"
+                                >
+                                    <div>
+                                        <div class="flex justify-between items-center mb-3">
+                                            <span class="text-xs font-bold text-brand-cyan uppercase">{proj.category}</span>
+                                            <span class="text-xs bg-brand-purple/30 text-brand-accent px-2.5 py-1 rounded-full border border-brand-purple/40">{proj.tag}</span>
+                                        </div>
+                                        <h3 class="text-xl font-bold mb-1 text-white">{proj.title}</h3>
+                                        <p class="text-xs text-gray-500 mb-3">{proj.period}</p>
+                                        <p class="text-gray-300 text-sm leading-relaxed">{proj.desc}</p>
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </section>
+
+                    {/* Contact Section */}
+                    <section id="contact" class="max-w-6xl mx-auto px-6 py-16">
+                        <div class="glass-card rounded-3xl p-8 md:p-12">
+                            <h2 class="text-3xl font-bold mb-8 text-center text-brand-accent">Get In Touch</h2>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 text-center">
+                                <div class="glass-card p-4 rounded-xl">
+                                    <p class="text-xs text-gray-400">Phone</p>
+                                    <p class="font-semibold text-white mt-1">+91 6360321569</p>
+                                </div>
+                                <div class="glass-card p-4 rounded-xl">
+                                    <p class="text-xs text-gray-400">Email</p>
+                                    <a href="mailto:mayuravarmajainv@gmail.com" class="font-semibold text-brand-cyan mt-1 block">mayuravarmajainv@gmail.com</a>
+                                </div>
+                                <div class="glass-card p-4 rounded-xl">
+                                    <p class="text-xs text-gray-400">Location</p>
+                                    <p class="font-semibold text-white mt-1">Bengaluru, Karnataka</p>
+                                </div>
+                            </div>
+
+                            <form action="https://api.web3forms.com/submit" method="POST" class="max-w-xl mx-auto space-y-4">
+                                <input type="hidden" name="access_key" value="2a3ad04d-5800-4a87-afb2-036db16ae388" />
+                                <div>
+                                    <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 rounded-xl glass-card border border-gray-700 focus:border-brand-accent outline-none text-white transition" />
+                                </div>
+                                <div>
+                                    <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3 rounded-xl glass-card border border-gray-700 focus:border-brand-accent outline-none text-white transition" />
+                                </div>
+                                <div>
+                                    <textarea name="message" rows="4" placeholder="Your Message" required class="w-full px-4 py-3 rounded-xl glass-card border border-gray-700 focus:border-brand-accent outline-none text-white transition"></textarea>
+                                </div>
+                                <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-brand-purple to-brand-accent font-bold text-lg hover:shadow-lg hover:shadow-brand-purple/50 transition">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </section>
+
+                    {/* Footer */}
+                    <footer class="text-center py-8 text-gray-500 text-sm border-t border-gray-800">
+                        © Mayura Varma Jain | Junior Python Developer & AI Engineer
+                    </footer>
+
+                </div>
+            );
+        }
+
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    </script>
+</body>
 </html>
